@@ -1,5 +1,5 @@
-const { createHmac } = await import('crypto');
-import { v4 as uuidv4, v4 } from 'uuid';
+const { createHmac } =  require('crypto');
+const uuidv4 = require('uuid/v4')
 const mongoose  = require('mongoose');
 
 const userSchema = new mongoose.Schema({   
